@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+
+		<title>Berry Street</title>
+
+		<link href="styles/style.css" rel="stylesheet">
+	</head>
+
+	<body>
+		<div class="app-space js-app-space"><!-- All available space for app -->
+			<div class="app-container js-app-container"><!-- Uniform limits for all app content -->
+
+				<div class="menu loading-menu js-loading-menu">
+					<h1 class="loading">Loading...</h1>
+				</div>
+
+				<div class="menu audioerror-menu js-audioerror-menu">
+					<h1 class="a-title">Audio Error</h1>
+
+					<p class="audioerror-info">
+						Some or all audio could not be loaded. You will be missing the music!<br>
+						Try a different browser. Firefox and Chrome should work.
+					</p>
+
+					<nav>
+						<button class="button js-close-audioerror">Close</button>
+					</nav>
+				</div>
+
+				<canvas class="app-canvas js-app-canvas">
+					Your browser does not support canvas.
+				</canvas>
+
+				<div class="message js-message"></div>
+
+				<div class="menu main-menu js-main-menu">
+					<h1 class="main-menu-title">Berry Street</h1>
+					<h2 class="main-menu-high-score">High Score: <span class="js-high-score">0</span></h2>
+
+					<nav class="main-menu-button-bar">
+						<button class="button main-button js-start">Play</button>
+						<button class="button main-button js-how-to-play">How to play</button>
+						<button class="button main-button js-about">About</button>
+						<button class="button main-button js-options">Options</button>
+					</nav>
+				</div>
+
+				<div class="menu pause-menu js-pause-menu">
+					<h1 class="a-title">Paused</h1>
+
+					<h2 class="pause-score">Score: <span class="js-score">0</span></h2>
+
+					<nav>
+						<button class="button js-resume">Resume</button>
+						<button class="button js-options">Options</button>
+						<button class="button js-pause-main">Main menu</button>
+					</nav>
+				</div>
+
+				<div class="menu end-menu js-end-menu">
+					<h1 class="end-title">End of the line.</h1>
+
+					<ul class="end-scores">
+						<li>Score: <span class="js-score">0</span></li>
+						<li><span class="js-new"></span>High Score: <span class="js-high-score">0</span></li>
+					</ul>
+
+					<nav>
+						<button class="button js-end-again">Play again</button>
+						<button class="button js-options">Options</button>
+						<button class="button js-end-main">Main menu</button>
+					</nav>
+				</div>
+
+				<div class="menu htp-menu js-htp-menu">
+					<h1 class="a-title">How to Play</h1>
+
+					<p class="htp-para">
+						Travel across the street and keep going right.<br>
+						Avoid the others.
+					</p>
+
+					<p class="htp-para htp-controls">
+						Use <span class="key">A</span> and <span class="key">D</span> or <span class="key">←</span> and <span class="key">→</span> to move left and right.<br>
+						Press <span class="key">W</span>, <span class="key">↑</span>, or <span class="key">Esc</span> to pause/resume.<br>
+						Press <span class="key">D</span> or <span class="key">→</span> at the end of the game to play again.
+					</p>
+
+					<nav>
+						<button class="button js-htp-close">Close</button>
+					</nav>
+				</div>
+
+				<div class="menu about-menu js-about-menu">
+					<h1 class="a-title">About</h1>
+
+					<ul class="info">
+						<li>Author: <a href="https://github.com/Costava" target="_blank">Costava</a></li>
+						<li>Version: 0.0.2</li>
+						<li><a href="https://github.com/Costava/berry-street" target="_blank">View source on GitHub</a></li>
+					</ul>
+
+					<h2 class="special-thanks">Special Thanks</h2>
+
+					<ul class="st-list">
+						<li><a href="http://opengameart.org/users/edwinnington" target="_blank">edwinnington</a>: Music</li>
+						<li><a href="https://github.com/goldfire" target="_blank">James Simpson</a>: <a href="https://github.com/goldfire/howler.js/" target="_blank">howler.js</a></li>
+						<li><a href="https://github.com/yamadapc" target="_blank">Pedro Tacla Yamada</a>: <a href="https://github.com/yamadapc/js-written-number" target="_blank">js-written-number</a></li>
+					</ul>
+
+					<nav>
+						<button class="button js-about-close">Close</button>
+					</nav>
+				</div>
+
+				<div class="menu options-menu js-options-menu">
+					<h1 class="a-title">Options</h1>
+
+					<div class="option">
+						Volume:
+						0%<input type="range" min="0" max="1" step="0.01" class="js-volume"></input>100%
+					</div>
+
+					<div class="option">
+						Require new keypress to continue from final lane:
+						<input type="checkbox" checked="checked" class="js-no-wrap-on-repeat"></input>
+					</div>
+
+					<div class="option">
+						Score Font:
+						<input type="text" value="monospace" class="js-score-font"></input>
+					</div>
+
+					<div class="option">
+						Score Font Size:
+						<input type="number" value="24" class="short js-score-size js-score-font-size"></input>px
+					</div>
+
+					<div class="option">
+						Score Vertical Padding:
+						<input type="number" value="4" class="short js-score-size js-score-padding"></input>px
+					</div>
+
+					<div class="option">
+						Score Language:
+						<select class="js-langs">
+							<option value="en" selected>English</option>
+							<option value="es">Español</option>
+							<option value="fr">Français</option>
+							<option value="pt">Português</option>
+						</select>
+						&nbsp;
+						<a href="https://github.com/yamadapc/js-written-number" target="_blank" class="contribute-lang">
+							&#9047;
+							<span>
+								Know a language that isn't listed? You can submit a pull request.
+							</span>
+						</a>
+					</div>
+
+					<nav>
+						<button class="button js-close-options">Close</button>
+					</nav>
+				</div>
+			</div>
+		</div>
+	</body>
+
+	<script src="scripts/howler.min.js"></script>
+	<script src="scripts/written-number.min.js"></script>
+	<script src="scripts/bundle.js"></script>
+</html>
