@@ -1,0 +1,6 @@
+# Ignore files that can be installed with `npm install`
+node_modules
+
+npm-debug.log
+
+*.js.map
