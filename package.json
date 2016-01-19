@@ -1,0 +1,24 @@
+{
+  "name": "berry-street",
+  "version": "0.0.2",
+  "author": "Costava",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "gulp": "gulp",
+    "webpack": "webpack",
+    "build-dev": "gulp default",
+    "build-production": "gulp production-build",
+    "debug-scripts": "webpack --watch --progress"
+  },
+  "devDependencies": {
+    "babel-core": "^6.2.1",
+    "babel-loader": "^6.2.0",
+    "babel-preset-es2015": "^6.1.18",
+    "bluebird": "^3.0.5",
+    "del": "^2.1.0",
+    "gulp": "^3.9.0",
+    "gulp-util": "^3.0.7",
+    "run-sequence": "^1.1.4",
+    "webpack": "^1.12.6"
+  }
+}
