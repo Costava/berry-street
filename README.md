@@ -9,6 +9,8 @@ Why did the berry cross the street?
 - Press `W`, `↑`, or `Esc` to pause/resume.
 - Press `D` or `→` at the end of the game to play again.
 
+## [Play Online](https://costava.github.io/berry-street/dist/)
+
 ![Berry Street](http://i.imgur.com/o1Y3ODh.png)
 
 ## Special Thanks
