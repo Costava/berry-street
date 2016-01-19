@@ -8,6 +8,7 @@ Why did the berry cross the street?
 - Travel across the street and keep going right.
 - Avoid the others.
 
+## Controls
 - Use `A` and `D` or `←` and `→` to move left and right.
 - Press `W`, `↑`, or `Esc` to pause/resume.
 - Press `D` or `→` at the end of the game to play again.
