@@ -21,3 +21,5 @@ Why did the berry cross the street?
 - [edwinnington](http://opengameart.org/users/edwinnington): Music
 - [James Simpson](https://github.com/goldfire): [howler.js](https://github.com/goldfire/howler.js)
 - [Pedro Tacla Yamada](https://github.com/yamadapc): [js-written-number](https://github.com/yamadapc/js-written-number)
+
+More details in attribution.md
