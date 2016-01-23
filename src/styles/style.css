@@ -273,6 +273,10 @@ html, body, .app-space {
 	margin: 20px 0;
 }
 
+.slider {
+	padding: 0;
+}
+
 .short {
 	max-width: 50px;
 }
