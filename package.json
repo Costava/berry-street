@@ -1,6 +1,6 @@
 {
   "name": "berry-street",
-  "version": "0.0.2",
+  "version": "1.0.0",
   "author": "Costava",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",

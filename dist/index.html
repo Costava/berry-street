@@ -50,7 +50,10 @@
 				<div class="menu pause-menu js-pause-menu">
 					<h1 class="a-title">Paused</h1>
 
-					<h2 class="pause-score">Score: <span class="js-score">0</span></h2>
+					<ul class="pause-scores">
+						<li>Score: <span class="js-score">0</span></li>
+						<li>Previous High Score: <span class="js-high-score">0</span></li>
+					</ul>
 
 					<nav>
 						<button class="button js-resume">Resume</button>
@@ -85,7 +88,7 @@
 					<p class="htp-para htp-controls">
 						Use <span class="key">A</span> and <span class="key">D</span> or <span class="key">←</span> and <span class="key">→</span> to move left and right.<br>
 						Press <span class="key">W</span>, <span class="key">↑</span>, or <span class="key">Esc</span> to pause/resume.<br>
-						Press <span class="key">D</span> or <span class="key">→</span> at the end of the game to play again.
+						Press <span class="key">D</span> or <span class="key">→</span> at the end of a game to play again.
 					</p>
 
 					<nav>
@@ -98,7 +101,7 @@
 
 					<ul class="info">
 						<li>Author: <a href="https://github.com/Costava" target="_blank">Costava</a></li>
-						<li>Version: 0.0.2</li>
+						<li>Version: 1.0.0</li>
 						<li><a href="https://github.com/Costava/berry-street" target="_blank">View source on GitHub</a></li>
 					</ul>
 
@@ -120,7 +123,7 @@
 
 					<div class="option">
 						Volume:
-						0%<input type="range" min="0" max="1" step="0.01" class="js-volume"></input>100%
+						0%<input type="range" min="0" max="1" step="0.01" class="slider js-volume"></input>100%
 					</div>
 
 					<div class="option">

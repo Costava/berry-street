@@ -53,6 +53,9 @@ function Game() {
 	this.newEnemyMinInterval = 90;
 	this.newEnemyTime = 0;
 
+	this.menuEnemyMinSpeed = 0.010;// vw per millisecond
+	this.menuEnemyMaxSpeed = 0.015;
+
 	this.menuEnemyInterval = 300;// milliseconds
 	this.menuEnemyTime = 0;
 
@@ -242,6 +245,20 @@ Game.prototype.addRandomEnemy = function() {
 
 	var radiusvw = Util.randomInInterval(this.enemyMinRadius, this.enemyMaxRadius) * this.laneWidthvw;
 	var speedvw = Util.randomInInterval(this.enemyMinSpeed, this.enemyMaxSpeed);
+
+	var xvw = (this.laneWidthvw / 2) + lane * this.laneWidthvw;
+	var yvw = 0 - radiusvw;
+
+	var enemy = new Enemy({x: xvw, y: yvw}, radiusvw, speedvw, lane);
+
+	this.enemies.push(enemy);
+};
+
+Game.prototype.addRandomMenuEnemy = function() {
+	var lane = Util.randomInt(1, this.lanes.length - 2);
+
+	var radiusvw = Util.randomInInterval(this.enemyMinRadius, this.enemyMaxRadius) * this.laneWidthvw;
+	var speedvw = Util.randomInInterval(this.menuEnemyMinSpeed, this.menuEnemyMaxSpeed);
 
 	var xvw = (this.laneWidthvw / 2) + lane * this.laneWidthvw;
 	var yvw = 0 - radiusvw;
@@ -591,7 +608,7 @@ Game.prototype.menuLoop = function() {
 
 	// Make new enemy if the time passed
 	if (this.gameTime - this.menuEnemyInterval >= this.menuEnemyTime) {
-		this.addRandomEnemy();
+		this.addRandomMenuEnemy();
 
 		this.menuEnemyTime = this.gameTime;
 	}
