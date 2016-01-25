@@ -183,11 +183,14 @@ html, body, .app-space {
 	margin: 25px 0 25px 0;
 }
 
-.pause-score {
+.pause-scores {
 	margin: 20px 0;
+	padding: 0;
 
 	font-size: 1.5em;
 	font-weight: normal;
+
+	list-style: none;
 }
 
 .end-title {
@@ -270,13 +273,17 @@ html, body, .app-space {
 	margin: 20px 0;
 }
 
+.slider {
+	padding: 0;
+}
+
 .short {
 	max-width: 50px;
 }
 
 .contribute-lang span {
 	margin: 20px 0 0 0;
-	
+
 	display: none;
 
 	color: #fff;
